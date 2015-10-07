@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+  # get 'sessions/new'
+  # post ''
+  #
+  # get 'sessions/create'
+  #
+  # get 'sessions/destroy'
+  root 'sessions#login'
 
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-
+  get 'sessions/login'
+  post 'sessions/login'
+  post 'teachers/index'
+  #resources :sessions
   resources :parents
   resources :grades
   resources :students
