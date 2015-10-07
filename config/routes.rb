@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   # get 'sessions/create'
   #
   # get 'sessions/destroy'
+  post 'students/index'
+
   root 'sessions#login'
+
 
   get 'sessions/login'
   post 'sessions/login'
