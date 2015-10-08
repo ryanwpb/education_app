@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # get 'sessions/create'
   #
   # get 'sessions/destroy'
-  post 'students/index'
+  # get 'student' => 'students/grades'
+  # get 'students/index'
+  # post 'students/index'
 
   root 'sessions#login'
 
