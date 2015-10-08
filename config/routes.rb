@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   post 'sessions/login'
   post 'teachers/index'
   #resources :sessions
+  resources :grades
   resources :parents
   resources :grades
   resources :students
